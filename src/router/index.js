@@ -5,9 +5,14 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '/profile/:userId',
     name: 'Home',
     component: () => import('../views/Home.vue'),
+  },
+  {
+    path: '/sign',
+    name: 'Sign',
+    component: () => import('../views/CreateAccount.vue'),
   },
 ];
 
